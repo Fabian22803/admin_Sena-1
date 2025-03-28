@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('apprentices', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->string('name'); //nombre
+            $table->string('email')->unique();//correo unico
             $table->string('cell number');
 
            

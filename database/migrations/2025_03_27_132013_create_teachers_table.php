@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name'); //nombre
             $table->string('email')->unique();
 
             $table->unsignedBigInteger('area_id')->unique();

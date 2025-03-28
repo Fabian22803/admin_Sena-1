@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('trainig_centers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name'); //nombre
             $table->string('location');
             $table->timestamps();
         });

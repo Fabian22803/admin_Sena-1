@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
-            $table->string('course number');
+            $table->string('course number'); //numero curso
             $table->string('day');
 
             $table->unsignedBigInteger('area_id')->unique();
