@@ -15,7 +15,11 @@ class course extends Model
     {
         return $this->belongsTo('App\Models\area');
     }
-    
+    public function trainig_center()
+    {
+        return $this->belongsTo('App\Models\trainig_center');
+    }
+
    public function apprentices(){
         return $this->hasMany('App\Models\apprentice');
     }
